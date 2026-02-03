@@ -29,6 +29,9 @@ generate_random_string(PG_FUNCTION_ARGS)
 		ereport(WARNING,
 				errmsg("Requestend length exeedes limit. It will be limited by %d",
 					   MAX_RANDOMSTRING_LEN));
+	else if (length < 0)
+		ereport(ERROR,
+				errmsg("Invalid requestend length : %d", length));
 
 	length = Min(length, MAX_RANDOMSTRING_LEN);
 	result = palloc0_array(char, length + 1);
