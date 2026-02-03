@@ -1,3 +1,10 @@
 # pg_random_string
 
 Extension for PostgreSQL that allows to generate random strings.
+
+# Installation
+Clone this repo to the contrib/ folder, run *make* and *make install* commands.
+
+# Usage
+CREATE EXTENSION random_string;
+SELECT generate_random_string(N);
