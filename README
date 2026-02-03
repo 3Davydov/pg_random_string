@@ -1,0 +1,3 @@
+# pg_random_string
+
+Extension for PostgreSQL that allows to generate random strings.

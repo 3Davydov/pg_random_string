@@ -1,0 +1,4 @@
+# random_string extension
+comment = 'functions for generating random strings'
+default_version = '1.0'
+module_pathname = '$libdir/random_string'
